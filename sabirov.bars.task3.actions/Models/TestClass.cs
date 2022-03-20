@@ -20,13 +20,13 @@ namespace sabirov.bars.task3.actions.Models
                 try
                 {
                     var msg = Convert.ToChar(Console.ReadLine());
+                    OnKeyPressed.Invoke(this, msg);
                     if (msg == exitSymbol)
                     {
-                        OnKeyPressed.Invoke(this, msg);
                         Console.WriteLine("ну вот и все.. конец");
                         break;
                     }
-                    Console.WriteLine($"это не символ \"{exitSymbol}\", жду следующего сообщения...");
+                    Console.WriteLine($"жду следующего сообщения...");
 
                 }
                 catch (Exception e)

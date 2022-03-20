@@ -20,7 +20,7 @@ namespace sabirov.bars.task3.actions
 
         private static void TestClass_OnKeyPressed(object sender, char e)
         {
-            Console.WriteLine(e);
+            Console.WriteLine($"Вы ввели: {e}");
         }
     }
 }
